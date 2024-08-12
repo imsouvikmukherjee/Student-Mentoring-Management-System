@@ -2600,3 +2600,14 @@ input.search-control-2::placeholder {
 		display: none
 	}
 }
+
+.addbtn{
+	background-color:#00a8ff;
+	color:white;
+}
+
+.addbtn:hover{
+	background-color:#098ed5;
+	color:white;
+	transition: 0.5s
+}

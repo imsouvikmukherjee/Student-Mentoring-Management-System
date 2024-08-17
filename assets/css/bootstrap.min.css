@@ -3626,6 +3626,20 @@ textarea.form-control-lg {
 .card-group>.card {
 	margin-bottom: .75rem
 }
+.vm{
+	text-align: center;
+	margin: auto;
+	padding: 20px 0px 0px 0px;
+	/* border-color: ; */
+	color: #008cff;
+	size: 1rem
+	
+}
+.vm.button{
+	color: #008cff;
+	size: 10px;
+	letter-spacing: normal;
+}
 @media (min-width:576px) {
 	.card-group {
 		display: flex;

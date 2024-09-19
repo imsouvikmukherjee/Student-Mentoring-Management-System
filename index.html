@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--favicon-->
-    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+    <link rel="icon" href="assets/images/ecmt_logo.png" type="image/png" />
     <!--plugins-->
     <link href="assets/plugins/notifications/css/lobibox.min.css" rel="stylesheet" />
     <link href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="assets/css/header-colors.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="assets/plugins/Drag-And-Drop/dist/imageuploadify.min.css" rel="stylesheet" />
+    <link href="assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
     <title>Student Mentoring Management System</title>
 </head>
 
@@ -37,17 +39,17 @@
         <div class="sidebar-wrapper" data-simplebar="true">
             <div class="sidebar-header">
                 <div>
-                    <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+                    <img src="assets/images/ecmt_logo.png" class="logo-icon" alt="logo icon">
                 </div>
                 <div>
-                    <h4 class="logo-text">Amdash</h4>
+                    <h4 class="logo-text">Mentoring</h4>
                 </div>
                 <div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
                 </div>
             </div>
             <!--navigation-->
             <ul class="metismenu" id="menu">
-                <li>
+                <!-- <li>
                     <a href="javascript:;" class="has-arrow">
                         <div class="parent-icon"><i class='bx bx-home-circle'></i>
                         </div>
@@ -59,8 +61,8 @@
                         <li> <a href="index2.html"><i class="bx bx-right-arrow-alt"></i>Alternate</a>
                         </li>
                     </ul>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <a href="javascript:;" class="has-arrow">
                         <div class="parent-icon"><i class="bx bx-category"></i>
                         </div>
@@ -82,15 +84,24 @@
                         <li> <a href="app-fullcalender.html"><i class="bx bx-right-arrow-alt"></i>Calendar</a>
                         </li>
                     </ul>
-                </li>
-                <li class="menu-label">UI Elements</li>
+                </li> -->
+                <!-- <li class="menu-label">UI Elements</li> -->
+
                 <li>
+                    <a href="index.html">
+                        <div class="parent-icon"><i class="bi bi-house-door"></i>
+                        </div>
+                        <div class="menu-title">Dashboard</div>
+                    </a>
+                </li>
+
+                <!-- <li>
                     <a href="widgets.html">
                         <div class="parent-icon"><i class='bx bx-cookie'></i>
                         </div>
                         <div class="menu-title">Widgets</div>
                     </a>
-                </li>
+                </li> -->
 
                 <!-- <li>
                     <a href="subjects.html">
@@ -108,15 +119,15 @@
                         <div class="menu-title">Academic Details</div>
                     </a>
                     <ul>
-                        <li> <a href="ecommerce-products.html"><i class="bx bx-right-arrow-alt"></i>Degree</a>
+                        <li> <a href="department.html"><i class="bx bx-right-arrow-alt"></i>Department</a>
                         </li>
-                        <li> <a href="ecommerce-products-details.html"><i class="bx bx-right-arrow-alt"></i>Semister</a>
-                        </li>
-                        <li> <a href="ecommerce-add-new-products.html"><i class="bx bx-right-arrow-alt"></i>Subject</a>
-                        </li>
-                        <li> <a href="ecommerce-orders.html"><i class="bx bx-right-arrow-alt"></i>Orders</a>
-                        </li>
-                    </ul>
+                        <!-- <li> <a href="ecommerce-products-details.html"><i class="bx bx-right-arrow-alt"></i>Semister</a> -->
+                </li>
+                <li> <a href="subjects.html"><i class="bx bx-right-arrow-alt"></i>Subject</a>
+                </li>
+                <!-- <li> <a href="ecommerce-orders.html"><i class="bx bx-right-arrow-alt"></i>Orders</a> -->
+                </li>
+                </ul>
                 </li>
 
                 <li>
@@ -128,6 +139,22 @@
                 </li>
 
                 <li>
+                    <a href="add-mentees.html">
+                        <div class="parent-icon"><i class="bi bi-cloud-plus"></i>
+                        </div>
+                        <div class="menu-title">Add Mentees</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="assigned-mentors.html">
+                        <div class="parent-icon"><i class="bi bi-stickies"></i>
+                        </div>
+                        <div class="menu-title">Assigned Mentors</div>
+                    </a>
+                </li>
+
+                <!-- <li>
                     <a href="javascript:;" class="has-arrow">
                         <div class="parent-icon"><i class='bx bx-cart'></i>
                         </div>
@@ -143,8 +170,8 @@
                         <li> <a href="ecommerce-orders.html"><i class="bx bx-right-arrow-alt"></i>Orders</a>
                         </li>
                     </ul>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <a class="has-arrow" href="javascript:;">
                         <div class="parent-icon"><i class='bx bx-bookmark-heart'></i>
                         </div>
@@ -288,8 +315,8 @@
                         </div>
                         <div class="menu-title">User Profile</div>
                     </a>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <a href="timeline.html">
                         <div class="parent-icon"> <i class="bx bx-video-recording"></i>
                         </div>
@@ -355,8 +382,8 @@
                         <li> <a href="map-vector-maps.html"><i class="bx bx-right-arrow-alt"></i>Vector Maps</a>
                         </li>
                     </ul>
-                </li>
-                <li class="menu-label">Others</li>
+                </li> -->
+                <!-- <li class="menu-label">Others</li>
                 <li>
                     <a class="has-arrow" href="javascript:;">
                         <div class="parent-icon"><i class="bx bx-menu"></i>
@@ -389,7 +416,7 @@
                         </div>
                         <div class="menu-title">Support</div>
                     </a>
-                </li>
+                </li> -->
             </ul>
             <!--end navigation-->
         </div>
@@ -400,22 +427,22 @@
                 <nav class="navbar navbar-expand">
                     <div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
                     </div>
-                    <div class="search-bar flex-grow-1">
+                    <!-- <div class="search-bar flex-grow-1">
                         <div class="position-relative search-bar-box">
                             <input type="text" class="form-control search-control" placeholder="Type to search..."> <span class="position-absolute top-50 search-show translate-middle-y"><i class='bx bx-search'></i></span>
                             <span class="position-absolute top-50 search-close translate-middle-y"><i class='bx bx-x'></i></span>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="top-menu ms-auto">
                         <ul class="navbar-nav align-items-center">
-                            <li class="nav-item mobile-search-icon">
+                            <!-- <li class="nav-item mobile-search-icon">
                                 <a class="nav-link" href="#"> <i class='bx bx-search'></i>
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="nav-item dropdown dropdown-large">
-                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class='bx bx-category'></i>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end">
+                                <!-- <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class='bx bx-category'></i>
+                                </a> -->
+                                <!-- <div class="dropdown-menu dropdown-menu-end">
                                     <div class="row row-cols-3 g-3 p-3">
                                         <div class="col text-center">
                                             <div class="app-box mx-auto bg-gradient-cosmic text-white"><i class='bx bx-group'></i>
@@ -448,11 +475,11 @@
                                             <div class="app-title">Alerts</div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </li>
                             <li class="nav-item dropdown dropdown-large">
-                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
-                                    <i class='bx bx-bell'></i>
+                                <!-- <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
+                                    <i class='bx bx-bell'></i> -->
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <a href="javascript:;">
@@ -567,8 +594,8 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown dropdown-large">
-                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
-                                    <i class='bx bx-comment'></i>
+                                <!-- <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
+                                    <i class='bx bx-comment'></i> -->
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <a href="javascript:;">
@@ -720,26 +747,26 @@
                     </div>
                     <div class="user-box dropdown">
                         <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="assets/images/avatars/avatar-2.png" class="user-img" alt="user avatar">
+                            <img src="assets/images/avatars/avatar3.png" class="user-img" alt="user avatar">
                             <div class="user-info ps-3">
-                                <p class="user-name mb-0">Pauline Seitz</p>
-                                <p class="designattion mb-0">Web Designer</p>
+                                <p class="user-name mb-0">Souvik Mukherjee</p>
+                                <p class="designattion mb-0">Admin</p>
                             </div>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="javascript:;"><i class="bx bx-user"></i><span>Profile</span></a>
                             </li>
-                            <li><a class="dropdown-item" href="javascript:;"><i class="bx bx-cog"></i><span>Settings</span></a>
+                            <!-- <li><a class="dropdown-item" href="javascript:;"><i class="bx bx-cog"></i><span>Settings</span></a>
                             </li>
                             <li><a class="dropdown-item" href="javascript:;"><i class='bx bx-home-circle'></i><span>Dashboard</span></a>
                             </li>
                             <li><a class="dropdown-item" href="javascript:;"><i class='bx bx-dollar-circle'></i><span>Earnings</span></a>
                             </li>
                             <li><a class="dropdown-item" href="javascript:;"><i class='bx bx-download'></i><span>Downloads</span></a>
-                            </li>
-                            <li>
+                            </li> -->
+                            <!-- <li>
                                 <div class="dropdown-divider mb-0"></div>
-                            </li>
+                            </li> -->
                             <li><a class="dropdown-item" href="javascript:;"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
                             </li>
                         </ul>
@@ -758,8 +785,8 @@
                             <div class="card-body">
                                 <div class="d-flex align-items-center">
                                     <div>
-                                        <p class="mb-0 text-secondary">Chrome Users</p>
-                                        <h4 class="my-1">42K</h4>
+                                        <p class="mb-0 text-secondary">Users</p>
+                                        <h4 class="my-1">42</h4>
                                     </div>
                                     <div class="text-primary ms-auto font-35"><i class="bi bi-person-check-fill"></i>
                                     </div>
@@ -772,24 +799,10 @@
                             <div class="card-body">
                                 <div class="d-flex align-items-center">
                                     <div>
-                                        <p class="mb-0 text-secondary">Github Users</p>
-                                        <h4 class="my-1">56M</h4>
+                                        <p class="mb-0 text-secondary">Mentees</p>
+                                        <h4 class="my-1">153</h4>
                                     </div>
-                                    <div class="text-danger ms-auto font-35"><i class='bx bxl-github'></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card radius-10">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div>
-                                        <p class="mb-0 text-secondary">Firefox Users</p>
-                                        <h4 class="my-1">42M</h4>
-                                    </div>
-                                    <div class="text-warning ms-auto font-35"><i class='bx bxl-firefox'></i>
+                                    <div class="text-danger ms-auto font-35"><i class="bi bi-people-fill"></i>
                                     </div>
                                 </div>
                             </div>
@@ -800,10 +813,24 @@
                             <div class="card-body">
                                 <div class="d-flex align-items-center">
                                     <div>
-                                        <p class="mb-0 text-secondary">Shopify Users</p>
-                                        <h4 class="my-1">85M</h4>
+                                        <p class="mb-0 text-secondary">Mentoring Data (Pending)</p>
+                                        <h4 class="my-1">68</h4>
                                     </div>
-                                    <div class="text-success ms-auto font-35"><i class='bx bxl-shopify'></i>
+                                    <div class="text-warning ms-auto font-35"><i class="bi bi-info-lg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card radius-10">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <p class="mb-0 text-secondary">Mentorless</p>
+                                        <h4 class="my-1">85</h4>
+                                    </div>
+                                    <div class="text-success ms-auto font-35"><i class="bi bi-people-fill"></i>
                                     </div>
                                 </div>
                             </div>
@@ -944,23 +971,25 @@
                                     <table class="table align-middle mb-0 text-center">
                                         <thead class="table-primary">
                                             <tr>
-                                                <th>Product</th>
-                                                <th>Photo</th>
-                                                <th>Product ID</th>
-                                                <th>Status</th>
-                                                <th>Amount</th>
+                                                <th>Student Name</th>
+                                                <th>Image</th>
+                                                <th>Email</th>
+                                                <th>Contact</th>
+
                                                 <th>Date</th>
+                                                <th>Status</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Iphone 5</td>
-                                                <td><img src="assets/images/products/18.png" class="product-img-2" alt="product img"></td>
-                                                <td>#9405822</td>
-                                                <td><a href=""><span class="badge bg-gradient-quepal text-white shadow-sm w-100">Approved</span></a></td>
-                                                <td>$1250.00</td>
+                                                <td>Demo Demo</td>
+                                                <td><img src="assets/images/products/image1.png" class="product-img-2" alt="product img"></td>
+                                                <td>demo@gmail.com</td>
+
+                                                <td>+90 1111111111</td>
                                                 <td>03 Feb 2020</td>
+                                                <td><a href=""><span class="badge bg-gradient-quepal text-white shadow-sm w-100">Approved</span></a></td>
                                                 <!-- <td><div class="progress" style="height: 5px;">
 									<div class="progress-bar bg-gradient-quepal" role="progressbar" style="width: 100%"></div>
 								  </div></td> -->
@@ -984,12 +1013,13 @@
                                             </tr>
 
                                             <tr>
-                                                <td>Earphone GL</td>
-                                                <td><img src="assets/images/products/16.png" class="product-img-2" alt="product img"></td>
-                                                <td>#8304620</td>
-                                                <td><span class="badge bg-gradient-blooker text-white shadow-sm w-100">Pending</span></td>
-                                                <td>$1500.00</td>
+                                                <td>Souvik Mukherjee</td>
+                                                <td><img src="assets/images/products/image3.png" class="product-img-2" alt="product img"></td>
+                                                <td>souvik@gmail.com</td>
+
+                                                <td>+91 1212121212</td>
                                                 <td>05 Feb 2020</td>
+                                                <td><span class="badge bg-gradient-blooker text-white shadow-sm w-100">Pending</span></td>
                                                 <td>
                                                     <div>
                                                         <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
@@ -1013,12 +1043,13 @@
                                             </tr>
 
                                             <tr>
-                                                <td>HD Hand Camera</td>
-                                                <td><img src="assets/images/products/19.png" class="product-img-2" alt="product img"></td>
-                                                <td>#4736890</td>
-                                                <td><a href=""><span class="badge bg-gradient-quepal text-white shadow-sm w-100">Approved</span></a></td>
-                                                <td>$1400.00</td>
+                                                <td>Souvik Souvik</td>
+                                                <td><img src="assets/images/products/image2.png" class="product-img-2" alt="product img"></td>
+                                                <td>souvik1@gmail.com</td>
+
+                                                <td>+91 0000000000</td>
                                                 <td>06 Feb 2020</td>
+                                                <td><a href=""><span class="badge bg-gradient-quepal text-white shadow-sm w-100">Approved</span></a></td>
                                                 <td>
                                                     <div>
                                                         <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
@@ -1042,12 +1073,13 @@
                                             </tr>
 
                                             <tr>
-                                                <td>Clasic Shoes</td>
-                                                <td><img src="assets/images/products/04.png" class="product-img-2" alt="product img"></td>
-                                                <td>#8543765</td>
-                                                <td><a href=""><span class="badge bg-gradient-quepal text-white shadow-sm w-100">Approved</span></a></td>
-                                                <td>$1200.00</td>
+                                                <td>Mukherjee Souvik</td>
+                                                <td><img src="assets/images/products/image4.png" class="product-img-2" alt="product img"></td>
+                                                <td>mukherjee@gmail.com</td>
+
+                                                <td>+91 1111111111</td>
                                                 <td>14 Feb 2020</td>
+                                                <td><a href=""><span class="badge bg-gradient-quepal text-white shadow-sm w-100">Approved</span></a></td>
                                                 <td>
                                                     <div>
                                                         <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
@@ -1071,12 +1103,13 @@
 								  </div></td> -->
                                             </tr>
                                             <tr>
-                                                <td>Sitting Chair</td>
-                                                <td><img src="assets/images/products/11.png" class="product-img-2" alt="product img"></td>
-                                                <td>#9629240</td>
-                                                <td><span class="badge bg-gradient-blooker text-white shadow-sm w-100">Pending</span></td>
-                                                <td>$1500.00</td>
+                                                <td>Eminent BCA</td>
+                                                <td><img src="assets/images/products/image3.png" class="product-img-2" alt="product img"></td>
+                                                <td>eminentbca@gmail.com</td>
+
+                                                <td>+91 1234567890</td>
                                                 <td>18 Feb 2020</td>
+                                                <td><span class="badge bg-gradient-blooker text-white shadow-sm w-100">Pending</span></td>
                                                 <td>
                                                     <div>
                                                         <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
@@ -1099,12 +1132,13 @@
 								  </div></td> -->
                                             </tr>
                                             <tr>
-                                                <td>Hand Watch</td>
-                                                <td><img src="assets/images/products/17.png" class="product-img-2" alt="product img"></td>
-                                                <td>#8506790</td>
-                                                <td><a href=""><span class="badge bg-gradient-quepal text-white shadow-sm w-100">Approved</span></a></td>
-                                                <td>$1800.00</td>
+                                                <td>Swapnil Dewanjee</td>
+                                                <td><img src="assets/images/products/image1.png" class="product-img-2" alt="product img"></td>
+                                                <td>swapnil@gmil.com</td>
+
+                                                <td>+91 1236547890</td>
                                                 <td>21 Feb 2020</td>
+                                                <td><a href=""><span class="badge bg-gradient-quepal text-white shadow-sm w-100">Approved</span></a></td>
                                                 <td>
                                                     <div>
                                                         <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
@@ -1144,12 +1178,12 @@
                         <!--Start Back To Top Button--><a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
                         <!--End Back To Top Button-->
                         <footer class="page-footer">
-                            <p class="mb-0">Copyright © 2021. All right reserved.</p>
+                            <p class="mb-0">Copyright © 2024. All right reserved.</p>
                         </footer>
                     </div>
                     <!--end wrapper-->
                     <!--start switcher-->
-                    <div class="switcher-wrapper">
+                    <!-- <div class="switcher-wrapper">
                         <div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
                         </div>
                         <div class="switcher-body">
@@ -1242,7 +1276,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!--end switcher-->
                     <!-- Bootstrap JS -->
                     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -1262,6 +1296,64 @@
                     <script src="assets/js/index.js"></script>
                     <!--app JS-->
                     <script src="assets/js/app.js"></script>
+                    <script src="assets/plugins/Drag-And-Drop/dist/imageuploadify.min.js"></script>
+                    <script>
+                        $(document).ready(function() {
+                            $('#image-uploadify').imageuploadify();
+                        })
+                    </script>
+
+                    <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+                    <script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+                    <script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
+                    <script>
+                        $(document).ready(function() {
+                            $('#example').DataTable();
+                        });
+                    </script>
+                    <script>
+                        $(document).ready(function() {
+                            var table = $('#example2').DataTable({
+                                lengthChange: false,
+                                buttons: ['copy', 'excel', 'pdf', 'print']
+                            });
+
+                            table.buttons().container()
+                                .appendTo('#example2_wrapper .col-md-6:eq(0)');
+                        });
+                    </script>
+
+                    <script>
+                        $(document).ready(function() {
+                            // For Password Field
+                            $("#show_hide_password_1 a").on('click', function(event) {
+                                event.preventDefault();
+                                if ($('#show_hide_password_1 input').attr("type") == "text") {
+                                    $('#show_hide_password_1 input').attr('type', 'password');
+                                    $('#show_hide_password_1 i').addClass("bx-hide");
+                                    $('#show_hide_password_1 i').removeClass("bx-show");
+                                } else if ($('#show_hide_password_1 input').attr("type") == "password") {
+                                    $('#show_hide_password_1 input').attr('type', 'text');
+                                    $('#show_hide_password_1 i').removeClass("bx-hide");
+                                    $('#show_hide_password_1 i').addClass("bx-show");
+                                }
+                            });
+
+                            // For Confirm Password Field
+                            $("#show_hide_password_2 a").on('click', function(event) {
+                                event.preventDefault();
+                                if ($('#show_hide_password_2 input').attr("type") == "text") {
+                                    $('#show_hide_password_2 input').attr('type', 'password');
+                                    $('#show_hide_password_2 i').addClass("bx-hide");
+                                    $('#show_hide_password_2 i').removeClass("bx-show");
+                                } else if ($('#show_hide_password_2 input').attr("type") == "password") {
+                                    $('#show_hide_password_2 input').attr('type', 'text');
+                                    $('#show_hide_password_2 i').removeClass("bx-hide");
+                                    $('#show_hide_password_2 i').addClass("bx-show");
+                                }
+                            });
+                        });
+                    </script>
 </body>
 
 </html>

@@ -791,9 +791,9 @@
                                 </li>
                                 <!-- <li class="breadcrumb-item " aria-current="page" style="color: #00a8ff; text-decoration: none;"><a href="subjects.html">Semister Subjects</a></li> -->
 
-                                <li class="breadcrumb-item text-primary"><a href="subjects.html">Subjects</a>
+                                <li class="breadcrumb-item text-primary"><a href="users.html">Users</a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">Add Subject</li>
+                                <li class="breadcrumb-item active" aria-current="page">Add Users</li>
 
                             </ol>
                         </nav>
@@ -818,42 +818,65 @@
                             <div class="border p-4 rounded">
                                 <div class="card-title d-flex align-items-center">
 
-                                    <h5 class="mb-0 text-primary">Add Subjects</h5>
+                                    <h5 class="mb-0 text-primary">Add User</h5>
                                 </div>
                                 <hr/>
                                 <form action="" method="post">
                                     <div class="row mb-3">
-                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Department</label>
+                                        <label for="inputEnterYourName" class="col-sm-3 col-form-label">Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="inputEnterYourName" placeholder="Enter name">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <label for="inputEmailAddress2" class="col-sm-3 col-form-label">Email</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="inputEmailAddress2" placeholder="Enter email">
+                                            <!-- <div id="emailHelp" class="form-text">Email should be unique</div> -->
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Contact No.</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="inputChoosePassword2" placeholder="Enter contact no.">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <label for="inputChoosePassword" class="col-sm-3 col-form-label">Password</label>
+                                        <div class="col-sm-9">
+                                            <div class="input-group" id="show_hide_password_1">
+                                                <input type="password" class="form-control border-end-0" id="inputChoosePassword" placeholder="**********">
+                                                <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Confirm Password</label>
+                                        <div class="col-sm-9">
+                                            <div class="input-group" id="show_hide_password_2">
+                                                <input type="password" class="form-control border-end-0" id="inputChoosePassword2" placeholder="**********">
+                                                <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="row mb-3">
+                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">User Type</label>
                                         <div class="col-sm-9">
                                             <select class="form-select mb-3" aria-label="Default select example">
                                                 <option selected disabled>Choose</option>
-                                                <option value="1">BBA</option>
-                                                <option value="2">BCA</option>
-                                                <option value="2">BMLT</option>
-                                                <option value="2">Msc</option>
+                                                <option value="1">Admin</option>
+                                                <option value="2">Mentor</option>
                                                 
                                             </select>
                                         </div>
                                     </div>
-                                    <!-- <div class="row mb-3">
-                                        <label for="inputPhoneNo2" class="col-sm-3 col-form-label">Semister</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputPhoneNo2" placeholder="Enter semister">
-                                        </div>
-                                    </div> -->
-                                    <div class="row mb-3">
-                                        <label for="inputEmailAddress2" class="col-sm-3 col-form-label">Subject</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputEmailAddress2" placeholder="Enter subject name">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Paper Code</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputChoosePassword2" placeholder="Enter paper code">
-                                        </div>
-                                    </div>
-
 
 
                                     <div class="row">
@@ -992,6 +1015,38 @@
                 <script src="assets/js/index.js"></script>
                 <!--app JS-->
                 <script src="assets/js/app.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        // For Password Field
+                        $("#show_hide_password_1 a").on('click', function(event) {
+                            event.preventDefault();
+                            if ($('#show_hide_password_1 input').attr("type") == "text") {
+                                $('#show_hide_password_1 input').attr('type', 'password');
+                                $('#show_hide_password_1 i').addClass("bx-hide");
+                                $('#show_hide_password_1 i').removeClass("bx-show");
+                            } else if ($('#show_hide_password_1 input').attr("type") == "password") {
+                                $('#show_hide_password_1 input').attr('type', 'text');
+                                $('#show_hide_password_1 i').removeClass("bx-hide");
+                                $('#show_hide_password_1 i').addClass("bx-show");
+                            }
+                        });
+
+                        // For Confirm Password Field
+                        $("#show_hide_password_2 a").on('click', function(event) {
+                            event.preventDefault();
+                            if ($('#show_hide_password_2 input').attr("type") == "text") {
+                                $('#show_hide_password_2 input').attr('type', 'password');
+                                $('#show_hide_password_2 i').addClass("bx-hide");
+                                $('#show_hide_password_2 i').removeClass("bx-show");
+                            } else if ($('#show_hide_password_2 input').attr("type") == "password") {
+                                $('#show_hide_password_2 input').attr('type', 'text');
+                                $('#show_hide_password_2 i').removeClass("bx-hide");
+                                $('#show_hide_password_2 i').addClass("bx-show");
+                            }
+                        });
+                    });
+                </script>
+
 </body>
 
 </html>

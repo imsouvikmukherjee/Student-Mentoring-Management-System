@@ -479,8 +479,8 @@
                             </li>
                             <li class="nav-item dropdown dropdown-large">
                                 <!-- <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
-                                    <i class='bx bx-bell'></i> -->
-                                </a>
+                                    <i class='bx bx-bell'></i>
+                                </a> -->
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <a href="javascript:;">
                                         <div class="msg-header">
@@ -783,86 +783,592 @@
                 <!-- <div class="breadcrumb-title pe-3">Semister Subjects</div> -->
                 <!--breadcrumb-->
                 <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-                    <div class="breadcrumb-title pe-3">Add Subjects</div>
+                    <div class="breadcrumb-title pe-3">Mentoring Info</div>
                     <div class="ps-3">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0 p-0">
-                                <li class="breadcrumb-item text-primary"><a href="index.html"><i class="bx bx-home-alt"></i></a>
+                                <li class="breadcrumb-item"><a href="index.html" style="color: #00a8ff;"><i class="bx bx-home-alt"></i></a>
                                 </li>
-                                <!-- <li class="breadcrumb-item " aria-current="page" style="color: #00a8ff; text-decoration: none;"><a href="subjects.html">Semister Subjects</a></li> -->
-
-                                <li class="breadcrumb-item text-primary"><a href="subjects.html">Subjects</a>
-                                </li>
-                                <li class="breadcrumb-item active" aria-current="page">Add Subject</li>
+                                <li class="breadcrumb-item active" aria-current="page">Mentoring Info</li>
 
                             </ol>
                         </nav>
                     </div>
 
+                    <div class="ms-auto"></div>
+                    <div class="btn-group">
+                        <a href="assign-mentor-for-student.html" class="btn btn-primary btn-sm">Assign Mentor</a>
+
+                    </div>
+
+
                 </div>
                 <!--end breadcrumb-->
 
                 <div class="row mt-4">
-                    <!-- <div class="col-12 col-lg-12">
+                    <div class="col-12 col-lg-12">
                         <div class="card radius-10">
                             <div class="card-body">
 
+                                <!-- <div class="d-flex justify-content-end">
+                                    <a href="add-subject.html" class="btn btn-light "><i class="bi bi-plus-lg"></i></a>
+                                    <a href="" class="btn btn-light  "><i class="bi bi-arrow-clockwise"></i></a>
+                                </div> -->
 
-                            </div>
-                        </div>
-                    </div> -->
+
+                                <div class="table-responsive">
+                                    <table id="example2" class="table table-striped table-bordered">
+                                        <thead class="table-primary">
+                                            <tr>
+                                                <th>Student Name</th>
+                                                <th>Email</th>
+                                                <th>Contact</th>
+                                                <th>Student Image</th>
+                                                <th>Mentor Name</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Souvik Mukherjee</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image1.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
 
 
-                    <div class="card border-top border-0 border-4 border-primary">
-                        <div class="card-body">
-                            <div class="border p-4 rounded">
-                                <div class="card-title d-flex align-items-center">
+                                            <tr>
+                                                <td>Arit Biswas</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image2.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
 
-                                    <h5 class="mb-0 text-primary">Add Subjects</h5>
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Swapnil Dewanjee</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image3.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Surya paul</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image4.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Sandip Chandra</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image1.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Sayantan Paul</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image2.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Arit Biswas</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image3.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Jahira Parvin</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image4.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Souvik Mukherjee</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image1.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Arit Biswas</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image2.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Swapnil Dewanjee</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image3.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Sandip Chandra</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image4.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Sayantan paul</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image1.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Jahira Parvin</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image2.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Surya Narayan Paul</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 2121212121</td>
+                                                <td><img src="assets/images/products/image3.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Sayantan Paul</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image4.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Souvik Mukherjee</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 2222222222</td>
+                                                <td><img src="assets/images/products/image1.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Swapnil Dewanjee</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image2.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Souvik Mukherjee</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image3.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Souvik Mukherjee</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image4.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Souvik Mukherjee</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image1.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Souvik Mukherjee</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image2.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Souvik Mukherjee</td>
+                                                <td>souvik@gmail.com</td>
+                                                <td>+91 9064293959</td>
+                                                <td><img src="assets/images/products/image3.png" class="product-img-2" alt="product img"></td>
+                                                <td>Aritra Kundu</td>
+                                                <td>
+                                                    <div>
+                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i>
+									</a>
+                                                        <ul class="dropdown-menu">
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-info-square"></i> Info</a>
+                                                            </li>
+
+                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Student Name</th>
+                                                <th>Email</th>
+                                                <th>Contact</th>
+                                                <th>Student Image</th>
+                                                <th>Mentor Name</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
                                 </div>
-                                <hr/>
-                                <form action="" method="post">
-                                    <div class="row mb-3">
-                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Department</label>
-                                        <div class="col-sm-9">
-                                            <select class="form-select mb-3" aria-label="Default select example">
-                                                <option selected disabled>Choose</option>
-                                                <option value="1">BBA</option>
-                                                <option value="2">BCA</option>
-                                                <option value="2">BMLT</option>
-                                                <option value="2">Msc</option>
-                                                
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="row mb-3">
-                                        <label for="inputPhoneNo2" class="col-sm-3 col-form-label">Semister</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputPhoneNo2" placeholder="Enter semister">
-                                        </div>
-                                    </div> -->
-                                    <div class="row mb-3">
-                                        <label for="inputEmailAddress2" class="col-sm-3 col-form-label">Subject</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputEmailAddress2" placeholder="Enter subject name">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Paper Code</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputChoosePassword2" placeholder="Enter paper code">
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="row">
-                                        <label class="col-sm-3 col-form-label"></label>
-                                        <div class="col-sm-9">
-                                            <button type="submit" class="btn btn-primary px-4 mt-4 text-white">Save</button>
-                                        </div>
-                                    </div>
-                                </form>
                             </div>
                         </div>
                     </div>
@@ -879,7 +1385,7 @@
                 </div>
                 <!--end wrapper-->
                 <!--start switcher-->
-                <!-- <div class="switcher-wrapper">
+                <div class="switcher-wrapper">
                     <div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
                     </div>
                     <div class="switcher-body">
@@ -972,7 +1478,7 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <!--end switcher-->
                 <!-- Bootstrap JS -->
                 <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -992,6 +1498,25 @@
                 <script src="assets/js/index.js"></script>
                 <!--app JS-->
                 <script src="assets/js/app.js"></script>
+                <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+                <script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+                <script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('#example').DataTable();
+                    });
+                </script>
+                <script>
+                    $(document).ready(function() {
+                        var table = $('#example2').DataTable({
+                            lengthChange: false,
+                            buttons: ['copy', 'excel', 'pdf', 'print']
+                        });
+
+                        table.buttons().container()
+                            .appendTo('#example2_wrapper .col-md-6:eq(0)');
+                    });
+                </script>
 </body>
 
 </html>

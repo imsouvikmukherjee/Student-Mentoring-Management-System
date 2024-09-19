@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--favicon-->
-    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+    <link rel="icon" href="assets/images/ecmt_logo.png" type="image/png" />
     <!--plugins-->
     <link href="assets/plugins/notifications/css/lobibox.min.css" rel="stylesheet" />
     <link href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
@@ -27,7 +27,9 @@
     <link rel="stylesheet" href="assets/css/header-colors.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Amdash - Bootstrap 5 Admin Template</title>
+    <link href="assets/plugins/Drag-And-Drop/dist/imageuploadify.min.css" rel="stylesheet" />
+    <link href="assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+    <title>Student Mentoring Management System</title>
 </head>
 
 <body onload="info_noti()">
@@ -37,17 +39,17 @@
         <div class="sidebar-wrapper" data-simplebar="true">
             <div class="sidebar-header">
                 <div>
-                    <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+                    <img src="assets/images/ecmt_logo.png" class="logo-icon" alt="logo icon">
                 </div>
                 <div>
-                    <h4 class="logo-text">Amdash</h4>
+                    <h4 class="logo-text">Mentoring</h4>
                 </div>
                 <div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
                 </div>
             </div>
             <!--navigation-->
             <ul class="metismenu" id="menu">
-                <li>
+                <!-- <li>
                     <a href="javascript:;" class="has-arrow">
                         <div class="parent-icon"><i class='bx bx-home-circle'></i>
                         </div>
@@ -59,8 +61,8 @@
                         <li> <a href="index2.html"><i class="bx bx-right-arrow-alt"></i>Alternate</a>
                         </li>
                     </ul>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <a href="javascript:;" class="has-arrow">
                         <div class="parent-icon"><i class="bx bx-category"></i>
                         </div>
@@ -82,22 +84,50 @@
                         <li> <a href="app-fullcalender.html"><i class="bx bx-right-arrow-alt"></i>Calendar</a>
                         </li>
                     </ul>
-                </li>
-                <li class="menu-label">UI Elements</li>
+                </li> -->
+                <!-- <li class="menu-label">UI Elements</li> -->
+
                 <li>
+                    <a href="index.html">
+                        <div class="parent-icon"><i class="bi bi-house-door"></i>
+                        </div>
+                        <div class="menu-title">Dashboard</div>
+                    </a>
+                </li>
+
+                <!-- <li>
                     <a href="widgets.html">
                         <div class="parent-icon"><i class='bx bx-cookie'></i>
                         </div>
                         <div class="menu-title">Widgets</div>
                     </a>
-                </li>
+                </li> -->
 
-                <li>
+                <!-- <li>
                     <a href="subjects.html">
                         <div class="parent-icon"><i class="bi bi-card-heading"></i>
                         </div>
                         <div class="menu-title">Subjects</div>
                     </a>
+                </li> -->
+
+
+                <li>
+                    <a href="javascript:;" class="has-arrow">
+                        <div class="parent-icon"><i class="bi bi-card-heading"></i>
+                        </div>
+                        <div class="menu-title">Academic Details</div>
+                    </a>
+                    <ul>
+                        <li> <a href="department.html"><i class="bx bx-right-arrow-alt"></i>Department</a>
+                        </li>
+                        <!-- <li> <a href="ecommerce-products-details.html"><i class="bx bx-right-arrow-alt"></i>Semister</a> -->
+                </li>
+                <li> <a href="subjects.html"><i class="bx bx-right-arrow-alt"></i>Subject</a>
+                </li>
+                <!-- <li> <a href="ecommerce-orders.html"><i class="bx bx-right-arrow-alt"></i>Orders</a> -->
+                </li>
+                </ul>
                 </li>
 
                 <li>
@@ -109,6 +139,22 @@
                 </li>
 
                 <li>
+                    <a href="add-mentees.html">
+                        <div class="parent-icon"><i class="bi bi-cloud-plus"></i>
+                        </div>
+                        <div class="menu-title">Add Mentees</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="assigned-mentors.html">
+                        <div class="parent-icon"><i class="bi bi-stickies"></i>
+                        </div>
+                        <div class="menu-title">Assigned Mentors</div>
+                    </a>
+                </li>
+
+                <!-- <li>
                     <a href="javascript:;" class="has-arrow">
                         <div class="parent-icon"><i class='bx bx-cart'></i>
                         </div>
@@ -124,8 +170,8 @@
                         <li> <a href="ecommerce-orders.html"><i class="bx bx-right-arrow-alt"></i>Orders</a>
                         </li>
                     </ul>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <a class="has-arrow" href="javascript:;">
                         <div class="parent-icon"><i class='bx bx-bookmark-heart'></i>
                         </div>
@@ -269,8 +315,8 @@
                         </div>
                         <div class="menu-title">User Profile</div>
                     </a>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <a href="timeline.html">
                         <div class="parent-icon"> <i class="bx bx-video-recording"></i>
                         </div>
@@ -336,8 +382,8 @@
                         <li> <a href="map-vector-maps.html"><i class="bx bx-right-arrow-alt"></i>Vector Maps</a>
                         </li>
                     </ul>
-                </li>
-                <li class="menu-label">Others</li>
+                </li> -->
+                <!-- <li class="menu-label">Others</li>
                 <li>
                     <a class="has-arrow" href="javascript:;">
                         <div class="parent-icon"><i class="bx bx-menu"></i>
@@ -370,7 +416,7 @@
                         </div>
                         <div class="menu-title">Support</div>
                     </a>
-                </li>
+                </li> -->
             </ul>
             <!--end navigation-->
         </div>
@@ -381,21 +427,21 @@
                 <nav class="navbar navbar-expand">
                     <div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
                     </div>
-                    <div class="search-bar flex-grow-1">
+                    <!-- <div class="search-bar flex-grow-1">
                         <div class="position-relative search-bar-box">
                             <input type="text" class="form-control search-control" placeholder="Type to search..."> <span class="position-absolute top-50 search-show translate-middle-y"><i class='bx bx-search'></i></span>
                             <span class="position-absolute top-50 search-close translate-middle-y"><i class='bx bx-x'></i></span>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="top-menu ms-auto">
                         <ul class="navbar-nav align-items-center">
-                            <li class="nav-item mobile-search-icon">
+                            <!-- <li class="nav-item mobile-search-icon">
                                 <a class="nav-link" href="#"> <i class='bx bx-search'></i>
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="nav-item dropdown dropdown-large">
-                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class='bx bx-category'></i>
-                                </a>
+                                <!-- <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class='bx bx-category'></i>
+                                </a> -->
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <div class="row row-cols-3 g-3 p-3">
                                         <div class="col text-center">
@@ -432,9 +478,9 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown dropdown-large">
-                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
+                                <!-- <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
                                     <i class='bx bx-bell'></i>
-                                </a>
+                                </a> -->
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <a href="javascript:;">
                                         <div class="msg-header">
@@ -548,9 +594,9 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown dropdown-large">
-                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
+                                <!-- <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
                                     <i class='bx bx-comment'></i>
-                                </a>
+                                </a> -->
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <a href="javascript:;">
                                         <div class="msg-header">
@@ -574,7 +620,7 @@
                                         <a class="dropdown-item" href="javascript:;">
                                             <div class="d-flex align-items-center">
                                                 <div class="user-online">
-                                                    <img src="assets/images/avatars/avatar-2.png" class="msg-avatar" alt="user avatar">
+                                                    <img src="assets/images/avatars/avatar3.png" class="msg-avatar" alt="user avatar">
                                                 </div>
                                                 <div class="flex-grow-1">
                                                     <h6 class="msg-name">Althea Cabardo <span class="msg-time float-end">14
@@ -701,16 +747,16 @@
                     </div>
                     <div class="user-box dropdown">
                         <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="assets/images/avatars/avatar-2.png" class="user-img" alt="user avatar">
+                            <img src="assets/images/avatars/avatar3.png" class="user-img" alt="user avatar">
                             <div class="user-info ps-3">
-                                <p class="user-name mb-0">Pauline Seitz</p>
-                                <p class="designattion mb-0">Web Designer</p>
+                                <p class="user-name mb-0">Souvik Mukherjee</p>
+                                <p class="designattion mb-0">Admin</p>
                             </div>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="javascript:;"><i class="bx bx-user"></i><span>Profile</span></a>
                             </li>
-                            <li><a class="dropdown-item" href="javascript:;"><i class="bx bx-cog"></i><span>Settings</span></a>
+                            <!-- <li><a class="dropdown-item" href="javascript:;"><i class="bx bx-cog"></i><span>Settings</span></a>
                             </li>
                             <li><a class="dropdown-item" href="javascript:;"><i class='bx bx-home-circle'></i><span>Dashboard</span></a>
                             </li>
@@ -718,8 +764,8 @@
                             </li>
                             <li><a class="dropdown-item" href="javascript:;"><i class='bx bx-download'></i><span>Downloads</span></a>
                             </li>
-                            <li>
-                                <div class="dropdown-divider mb-0"></div>
+                            <li> -->
+                            <!-- <div class="dropdown-divider mb-0"></div> -->
                             </li>
                             <li><a class="dropdown-item" href="javascript:;"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
                             </li>
@@ -749,321 +795,330 @@
                         </nav>
                     </div>
 
-                </div>
-                <!--end breadcrumb-->
+                    <div class="ms-auto"></div>
+                    <div class="btn-group">
+                        <a href="add-user.html" class="btn btn-primary btn-sm">Add User</a>
 
-                <div class="row mt-4">
-                    <div class="col-12 col-lg-12">
-                        <div class="card radius-10">
-                            <div class="card-body">
-
-                                <div class="d-flex justify-content-end">
-                                    <a href="add-subject.html" class="btn btn-light "><i class="bi bi-plus-lg"></i></a>
-                                    <a href="" class="btn btn-light  "><i class="bi bi-arrow-clockwise"></i></a>
-                                </div>
-
-
-                                <div class="table-responsive mt-4">
-                                    <table class="table align-middle mb-0 text-center table-sm">
-                                        <thead class="table-primary ">
-                                            <tr>
-                                                <th>Sr No.</th>
-
-                                                <th>Name</th>
-
-                                                <th>Email</th>
-                                                <th>Contact</th>
-                                                <th>Usertype</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-
-                                                <td>Souvik Mukherjee</td>
-
-                                                <td>souvik@gmail.com</td>
-
-                                                <td>9064293911</td>
-                                                <td class="text-danger">Admin</td>
-                                                <td>
-                                                    <div>
-                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
-                                                        <ul class="dropdown-menu">
-                                                            <li>
-
-                                                                <a class="dropdown-item" href="javascript:;"><i class="bi bi-unlock"></i> Reset Password</a>
-                                                            </li>
-
-                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <td>1</td>
-
-                                                <td>Souvik Mukherjee</td>
-
-                                                <td>souvik@gmail.com</td>
-
-                                                <td>9064293911</td>
-                                                <td class="text-danger">Admin</td>
-                                                <td>
-                                                    <div>
-                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
-                                                        <ul class="dropdown-menu">
-                                                            <li>
-
-                                                                <a class="dropdown-item" href="javascript:;"><i class="bi bi-unlock"></i> Reset Password</a>
-                                                            </li>
-
-                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>1</td>
-
-                                                <td>Souvik Mukherjee</td>
-
-                                                <td>souvik@gmail.com</td>
-
-                                                <td>9064293911</td>
-                                                <td class="text-success">Mentor</td>
-                                                <td>
-                                                    <div>
-                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
-                                                        <ul class="dropdown-menu">
-                                                            <li>
-
-                                                                <a class="dropdown-item" href="javascript:;"><i class="bi bi-unlock"></i> Reset Password</a>
-                                                            </li>
-
-                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <td>1</td>
-
-                                                <td>Souvik Mukherjee</td>
-
-                                                <td>souvik@gmail.com</td>
-
-                                                <td>9064293911</td>
-                                                <td class="text-danger">Admin</td>
-                                                <td>
-                                                    <div>
-                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
-                                                        <ul class="dropdown-menu">
-                                                            <li>
-
-                                                                <a class="dropdown-item" href="javascript:;"><i class="bi bi-unlock"></i> Reset Password</a>
-                                                            </li>
-
-                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <td>1</td>
-
-                                                <td>Souvik Mukherjee</td>
-
-                                                <td>souvik@gmail.com</td>
-
-                                                <td>9064293911</td>
-                                                <td class="text-success">Mentor</td>
-                                                <td>
-                                                    <div>
-                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
-                                                        <ul class="dropdown-menu">
-                                                            <li>
-
-                                                                <a class="dropdown-item" href="javascript:;"><i class="bi bi-unlock"></i> Reset Password</a>
-                                                            </li>
-
-                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <td>1</td>
-
-                                                <td>Souvik Mukherjee</td>
-
-                                                <td>souvik@gmail.com</td>
-
-                                                <td>9064293911</td>
-                                                <td class="text-danger">Admin</td>
-                                                <td>
-                                                    <div>
-                                                        <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
-                                                        <ul class="dropdown-menu">
-                                                            <li>
-
-                                                                <a class="dropdown-item" href="javascript:;"><i class="bi bi-unlock"></i> Reset Password</a>
-                                                            </li>
-
-                                                            <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
-                    <!--end page wrapper -->
-                    <!--start overlay-->
-                    <div class="overlay toggle-icon"></div>
-                    <!--end overlay-->
-                    <!--Start Back To Top Button--><a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
-                    <!--End Back To Top Button-->
-                    <footer class="page-footer">
-                        <p class="mb-0">Copyright © 2021. All right reserved.</p>
-                    </footer>
+
                 </div>
-                <!--end wrapper-->
-                <!--start switcher-->
-                <div class="switcher-wrapper">
-                    <div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
-                    </div>
-                    <div class="switcher-body">
-                        <div class="d-flex align-items-center">
-                            <h5 class="mb-0 text-uppercase">Theme Customizer</h5>
-                            <button type="button" class="btn-close ms-auto close-switcher" aria-label="Close"></button>
-                        </div>
-                        <hr/>
-                        <h6 class="mb-0">Theme Styles</h6>
-                        <hr/>
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="lightmode" checked>
-                                <label class="form-check-label" for="lightmode">Light</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="darkmode">
-                                <label class="form-check-label" for="darkmode">Dark</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="semidark">
-                                <label class="form-check-label" for="semidark">Semi Dark</label>
-                            </div>
-                        </div>
-                        <hr/>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="minimaltheme" name="flexRadioDefault">
-                            <label class="form-check-label" for="minimaltheme">Minimal Theme</label>
-                        </div>
-                        <hr/>
-                        <h6 class="mb-0">Header Colors</h6>
-                        <hr/>
-                        <div class="header-colors-indigators">
-                            <div class="row row-cols-auto g-3">
-                                <div class="col">
-                                    <div class="indigator headercolor1" id="headercolor1"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator headercolor2" id="headercolor2"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator headercolor3" id="headercolor3"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator headercolor4" id="headercolor4"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator headercolor5" id="headercolor5"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator headercolor6" id="headercolor6"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator headercolor7" id="headercolor7"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator headercolor8" id="headercolor8"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr/>
-                        <h6 class="mb-0">Sidebar Colors</h6>
-                        <hr/>
-                        <div class="header-colors-indigators">
-                            <div class="row row-cols-auto g-3">
-                                <div class="col">
-                                    <div class="indigator sidebarcolor1" id="sidebarcolor1"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator sidebarcolor2" id="sidebarcolor2"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator sidebarcolor3" id="sidebarcolor3"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator sidebarcolor4" id="sidebarcolor4"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator sidebarcolor5" id="sidebarcolor5"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator sidebarcolor6" id="sidebarcolor6"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator sidebarcolor7" id="sidebarcolor7"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator sidebarcolor8" id="sidebarcolor8"></div>
-                                </div>
+
+            </div>
+            <!--end breadcrumb-->
+
+            <div class="row mt-4">
+                <div class="col-12 col-lg-12">
+                    <div class="card radius-10">
+                        <div class="card-body">
+
+                            <!-- <div class="d-flex justify-content-end">
+                                <a href="add-subject.html" class="btn btn-light "><i class="bi bi-plus-lg"></i></a>
+                                <a href="" class="btn btn-light  "><i class="bi bi-arrow-clockwise"></i></a>
+                            </div> -->
+
+
+                            <div class="table-responsive mt-4">
+                                <table class="table align-middle mb-0 text-center table-sm table-striped table-bordered">
+                                    <thead class="table-primary ">
+                                        <tr>
+                                            <th>Sr No.</th>
+
+                                            <th>Name</th>
+
+                                            <th>Email</th>
+                                            <th>Contact</th>
+                                            <th>Usertype</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>Souvik Mukherjee</td>
+
+                                            <td>souvik@gmail.com</td>
+
+                                            <td>9064293911</td>
+                                            <td class="text-danger">Admin</td>
+                                            <td>
+                                                <div>
+                                                    <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+
+                                                            <a class="dropdown-item" href="javascript:;"><i class="bi bi-unlock"></i> Reset Password</a>
+                                                        </li>
+
+                                                        <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>Souvik Mukherjee</td>
+
+                                            <td>souvik@gmail.com</td>
+
+                                            <td>9064293911</td>
+                                            <td class="text-danger">Admin</td>
+                                            <td>
+                                                <div>
+                                                    <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+
+                                                            <a class="dropdown-item" href="javascript:;"><i class="bi bi-unlock"></i> Reset Password</a>
+                                                        </li>
+
+                                                        <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>Souvik Mukherjee</td>
+
+                                            <td>souvik@gmail.com</td>
+
+                                            <td>9064293911</td>
+                                            <td class="text-success">Mentor</td>
+                                            <td>
+                                                <div>
+                                                    <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+
+                                                            <a class="dropdown-item" href="javascript:;"><i class="bi bi-unlock"></i> Reset Password</a>
+                                                        </li>
+
+                                                        <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>Souvik Mukherjee</td>
+
+                                            <td>souvik@gmail.com</td>
+
+                                            <td>9064293911</td>
+                                            <td class="text-danger">Admin</td>
+                                            <td>
+                                                <div>
+                                                    <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+
+                                                            <a class="dropdown-item" href="javascript:;"><i class="bi bi-unlock"></i> Reset Password</a>
+                                                        </li>
+
+                                                        <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>Souvik Mukherjee</td>
+
+                                            <td>souvik@gmail.com</td>
+
+                                            <td>9064293911</td>
+                                            <td class="text-success">Mentor</td>
+                                            <td>
+                                                <div>
+                                                    <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+
+                                                            <a class="dropdown-item" href="javascript:;"><i class="bi bi-unlock"></i> Reset Password</a>
+                                                        </li>
+
+                                                        <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>Souvik Mukherjee</td>
+
+                                            <td>souvik@gmail.com</td>
+
+                                            <td>9064293911</td>
+                                            <td class="text-danger">Admin</td>
+                                            <td>
+                                                <div>
+                                                    <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+
+                                                            <a class="dropdown-item" href="javascript:;"><i class="bi bi-unlock"></i> Reset Password</a>
+                                                        </li>
+
+                                                        <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--end switcher-->
-                <!-- Bootstrap JS -->
-                <script src="assets/js/bootstrap.bundle.min.js"></script>
-                <!--plugins-->
-                <script src="assets/js/jquery.min.js"></script>
-                <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
-                <script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
-                <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-                <script src="assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
-                <script src="assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
-                <script src="assets/plugins/chartjs/js/Chart.min.js"></script>
-                <script src="assets/plugins/chartjs/js/Chart.extension.js"></script>
-                <script src="assets/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
-                <!--notification js -->
-                <script src="assets/plugins/notifications/js/lobibox.min.js"></script>
-                <script src="assets/plugins/notifications/js/notifications.min.js"></script>
-                <script src="assets/js/index.js"></script>
-                <!--app JS-->
-                <script src="assets/js/app.js"></script>
+
+                <!--end page wrapper -->
+                <!--start overlay-->
+                <div class="overlay toggle-icon"></div>
+                <!--end overlay-->
+                <!--Start Back To Top Button--><a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+                <!--End Back To Top Button-->
+                <footer class="page-footer">
+                    <p class="mb-0">Copyright © 2024. All right reserved.</p>
+                </footer>
+            </div>
+            <!--end wrapper-->
+            <!--start switcher-->
+            <!-- <div class=" switcher-wrapper ">
+                <div class="switcher-btn "> <i class='bx bx-cog bx-spin'></i>
+                </div>
+                <div class="switcher-body ">
+                    <div class="d-flex align-items-center ">
+                        <h5 class="mb-0 text-uppercase ">Theme Customizer</h5>
+                        <button type="button " class="btn-close ms-auto close-switcher " aria-label="Close "></button>
+                    </div>
+                    <hr/>
+                    <h6 class="mb-0 ">Theme Styles</h6>
+                    <hr/>
+                    <div class="d-flex align-items-center justify-content-between ">
+                        <div class="form-check ">
+                            <input class="form-check-input " type="radio " name="flexRadioDefault " id="lightmode " checked>
+                            <label class="form-check-label " for="lightmode ">Light</label>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input " type="radio " name="flexRadioDefault " id="darkmode ">
+                            <label class="form-check-label " for="darkmode ">Dark</label>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input " type="radio " name="flexRadioDefault " id="semidark ">
+                            <label class="form-check-label " for="semidark ">Semi Dark</label>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="form-check ">
+                        <input class="form-check-input " type="radio " id="minimaltheme " name="flexRadioDefault ">
+                        <label class="form-check-label " for="minimaltheme ">Minimal Theme</label>
+                    </div>
+                    <hr/>
+                    <h6 class="mb-0 ">Header Colors</h6>
+                    <hr/>
+                    <div class="header-colors-indigators ">
+                        <div class="row row-cols-auto g-3 ">
+                            <div class="col ">
+                                <div class="indigator headercolor1 " id="headercolor1 "></div>
+                            </div>
+                            <div class="col ">
+                                <div class="indigator headercolor2 " id="headercolor2 "></div>
+                            </div>
+                            <div class="col ">
+                                <div class="indigator headercolor3 " id="headercolor3 "></div>
+                            </div>
+                            <div class="col ">
+                                <div class="indigator headercolor4 " id="headercolor4 "></div>
+                            </div>
+                            <div class="col ">
+                                <div class="indigator headercolor5 " id="headercolor5 "></div>
+                            </div>
+                            <div class="col ">
+                                <div class="indigator headercolor6 " id="headercolor6 "></div>
+                            </div>
+                            <div class="col ">
+                                <div class="indigator headercolor7 " id="headercolor7 "></div>
+                            </div>
+                            <div class="col ">
+                                <div class="indigator headercolor8 " id="headercolor8 "></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr/>
+                    <h6 class="mb-0 ">Sidebar Colors</h6>
+                    <hr/>
+                    <div class="header-colors-indigators ">
+                        <div class="row row-cols-auto g-3 ">
+                            <div class="col ">
+                                <div class="indigator sidebarcolor1 " id="sidebarcolor1 "></div>
+                            </div>
+                            <div class="col ">
+                                <div class="indigator sidebarcolor2 " id="sidebarcolor2 "></div>
+                            </div>
+                            <div class="col ">
+                                <div class="indigator sidebarcolor3 " id="sidebarcolor3 "></div>
+                            </div>
+                            <div class="col ">
+                                <div class="indigator sidebarcolor4 " id="sidebarcolor4 "></div>
+                            </div>
+                            <div class="col ">
+                                <div class="indigator sidebarcolor5 " id="sidebarcolor5 "></div>
+                            </div>
+                            <div class="col ">
+                                <div class="indigator sidebarcolor6 " id="sidebarcolor6 "></div>
+                            </div>
+                            <div class="col ">
+                                <div class="indigator sidebarcolor7 " id="sidebarcolor7 "></div>
+                            </div>
+                            <div class="col ">
+                                <div class="indigator sidebarcolor8 " id="sidebarcolor8 "></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!--end switcher-->
+            <!-- Bootstrap JS -->
+            <script src="assets/js/bootstrap.bundle.min.js "></script>
+            <!--plugins-->
+            <script src="assets/js/jquery.min.js "></script>
+            <script src="assets/plugins/simplebar/js/simplebar.min.js "></script>
+            <script src="assets/plugins/metismenu/js/metisMenu.min.js "></script>
+            <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js "></script>
+            <script src="assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js "></script>
+            <script src="assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js "></script>
+            <script src="assets/plugins/chartjs/js/Chart.min.js "></script>
+            <script src="assets/plugins/chartjs/js/Chart.extension.js "></script>
+            <script src="assets/plugins/sparkline-charts/jquery.sparkline.min.js "></script>
+            <!--notification js -->
+            <script src="assets/plugins/notifications/js/lobibox.min.js "></script>
+            <script src="assets/plugins/notifications/js/notifications.min.js "></script>
+            <script src="assets/js/index.js "></script>
+            <!--app JS-->
+            <script src="assets/js/app.js "></script>
 </body>
 
 </html>

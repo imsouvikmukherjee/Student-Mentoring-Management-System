@@ -505,13 +505,13 @@ var ctx = document.getElementById("chart18").getContext('2d');
 
  // Index Notification
 	 
-	 function info_noti(){
-		Lobibox.notify('default', {
-		pauseDelayOnHover: true,
-		continueDelayOnInactiveTab: false,
-		size: 'mini',
-		position: 'top right',
-		icon: 'bx bx-info-circle',
-		msg: 'Welcome To The Dashboard'
-		});
-	  } 
+	//  function info_noti(){
+	// 	Lobibox.notify('default', {
+	// 	pauseDelayOnHover: true,
+	// 	continueDelayOnInactiveTab: false,
+	// 	size: 'mini',
+	// 	position: 'top right',
+	// 	icon: 'bx bx-info-circle',
+	// 	msg: 'Welcome To The Dashboard'
+	// 	});
+	//   } 

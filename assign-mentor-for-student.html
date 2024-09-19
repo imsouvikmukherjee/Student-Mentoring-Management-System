@@ -783,7 +783,7 @@
                 <!-- <div class="breadcrumb-title pe-3">Semister Subjects</div> -->
                 <!--breadcrumb-->
                 <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-                    <div class="breadcrumb-title pe-3">Add Subjects</div>
+                    <div class="breadcrumb-title pe-3">Assign Mentor</div>
                     <div class="ps-3">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0 p-0">
@@ -791,9 +791,9 @@
                                 </li>
                                 <!-- <li class="breadcrumb-item " aria-current="page" style="color: #00a8ff; text-decoration: none;"><a href="subjects.html">Semister Subjects</a></li> -->
 
-                                <li class="breadcrumb-item text-primary"><a href="subjects.html">Subjects</a>
+                                <li class="breadcrumb-item text-primary"><a href="assigned-mentors.html">Mentoring Info</a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">Add Subject</li>
+                                <li class="breadcrumb-item active" aria-current="page">Assign Mentor</li>
 
                             </ol>
                         </nav>
@@ -818,12 +818,27 @@
                             <div class="border p-4 rounded">
                                 <div class="card-title d-flex align-items-center">
 
-                                    <h5 class="mb-0 text-primary">Add Subjects</h5>
+                                    <h5 class="mb-0 text-primary">Assign Mentor</h5>
                                 </div>
                                 <hr/>
                                 <form action="" method="post">
+
                                     <div class="row mb-3">
-                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Department</label>
+                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Mentor</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-select mb-3" aria-label="Default select example">
+                                                <option selected disabled>Choose</option>
+                                                <option value="1">Debabrata Barik</option>
+                                                <option value="2">Aritra Kundu</option>
+                                                <option value="2">Mita Howlder</option>
+                                                <option value="2">Dr. Debkumar Ghosh</option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Filter By Departments</label>
                                         <div class="col-sm-9">
                                             <select class="form-select mb-3" aria-label="Default select example">
                                                 <option selected disabled>Choose</option>
@@ -835,31 +850,231 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <!-- <div class="row mb-3">
-                                        <label for="inputPhoneNo2" class="col-sm-3 col-form-label">Semister</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputPhoneNo2" placeholder="Enter semister">
-                                        </div>
-                                    </div> -->
-                                    <div class="row mb-3">
-                                        <label for="inputEmailAddress2" class="col-sm-3 col-form-label">Subject</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputEmailAddress2" placeholder="Enter subject name">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Paper Code</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputChoosePassword2" placeholder="Enter paper code">
-                                        </div>
-                                    </div>
 
 
+                                    <div class="row mb-3">
+                                        <div style="display: flex;">
+                                            <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Select Mentees</label>
+                                            <hr/>
+                                            <p>Selected Rows: <span id="selectedCount">0</span></p>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="table-responsive mt-4">
+                                                <table class="table align-middle mb-0 text-center table-striped">
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Demo Demo</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Swapnil Dewanjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Arit Biswas</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Sayantan Paul</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Surya Narayan Paul</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Jahira Parvin</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Sandip Chandra</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Deb Halder</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                                                            <td>Souvik Mukherjee</td>
+                                                            <td>souvik@gmail.com</td>
+                                                            <td>+91 9064293959</td>
+                                                        </tr>
+
+
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <div class="row">
-                                        <label class="col-sm-3 col-form-label"></label>
-                                        <div class="col-sm-9">
-                                            <button type="submit" class="btn btn-primary px-4 mt-4 text-white">Save</button>
+                                        <!-- <label class="col-sm-3 col-form-label"></label> -->
+                                        <div class="col-sm-12">
+                                            <button type="submit" class="btn btn-primary px-4 mt-4 text-white d-block mx-auto">Assign</button>
                                         </div>
                                     </div>
                                 </form>
@@ -992,6 +1207,21 @@
                 <script src="assets/js/index.js"></script>
                 <!--app JS-->
                 <script src="assets/js/app.js"></script>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+
+                        const checkboxes = document.querySelectorAll('.form-check-input');
+
+                        const updateCount = () => {
+                            const selectedCount = document.querySelectorAll('.form-check-input:checked').length;
+                            document.getElementById('selectedCount').textContent = selectedCount;
+                        };
+
+                        checkboxes.forEach(checkbox => {
+                            checkbox.addEventListener('change', updateCount);
+                        });
+                    });
+                </script>
 </body>
 
 </html>

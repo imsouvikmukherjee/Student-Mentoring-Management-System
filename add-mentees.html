@@ -783,7 +783,7 @@
                 <!-- <div class="breadcrumb-title pe-3">Semister Subjects</div> -->
                 <!--breadcrumb-->
                 <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-                    <div class="breadcrumb-title pe-3">Add Subjects</div>
+                    <div class="breadcrumb-title pe-3">Mentees</div>
                     <div class="ps-3">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0 p-0">
@@ -791,9 +791,9 @@
                                 </li>
                                 <!-- <li class="breadcrumb-item " aria-current="page" style="color: #00a8ff; text-decoration: none;"><a href="subjects.html">Semister Subjects</a></li> -->
 
-                                <li class="breadcrumb-item text-primary"><a href="subjects.html">Subjects</a>
-                                </li>
-                                <li class="breadcrumb-item active" aria-current="page">Add Subject</li>
+                                <!-- <li class="breadcrumb-item text-primary"><a href="subjects.html">Subjects</a>
+                                </li> -->
+                                <li class="breadcrumb-item active" aria-current="page">Add Mentees</li>
 
                             </ol>
                         </nav>
@@ -818,7 +818,7 @@
                             <div class="border p-4 rounded">
                                 <div class="card-title d-flex align-items-center">
 
-                                    <h5 class="mb-0 text-primary">Add Subjects</h5>
+                                    <h5 class="mb-0 text-primary">Add Mentees</h5>
                                 </div>
                                 <hr/>
                                 <form action="" method="post">
@@ -835,25 +835,17 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <!-- <div class="row mb-3">
-                                        <label for="inputPhoneNo2" class="col-sm-3 col-form-label">Semister</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputPhoneNo2" placeholder="Enter semister">
-                                        </div>
-                                    </div> -->
-                                    <div class="row mb-3">
-                                        <label for="inputEmailAddress2" class="col-sm-3 col-form-label">Subject</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputEmailAddress2" placeholder="Enter subject name">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Paper Code</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputChoosePassword2" placeholder="Enter paper code">
-                                        </div>
-                                    </div>
 
+
+
+                                    <div class="row mb-3">
+                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Upload Mentees File</label>
+                                        <div class="col-sm-9">
+                                            <form>
+                                                <input id="image-uploadify" type="file" accept=".xlsx,.xls,image/*,.doc,audio/*,.docx,video/*,.ppt,.pptx,.txt,.pdf" multiple>
+                                            </form>
+                                        </div>
+                                    </div>
 
 
                                     <div class="row">
@@ -992,6 +984,12 @@
                 <script src="assets/js/index.js"></script>
                 <!--app JS-->
                 <script src="assets/js/app.js"></script>
+                <script src="assets/plugins/Drag-And-Drop/dist/imageuploadify.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('#image-uploadify').imageuploadify();
+                    })
+                </script>
 </body>
 
 </html>

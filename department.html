@@ -479,8 +479,8 @@
                             </li>
                             <li class="nav-item dropdown dropdown-large">
                                 <!-- <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
-                                    <i class='bx bx-bell'></i> -->
-                                </a>
+                                    <i class='bx bx-bell'></i>
+                                </a> -->
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <a href="javascript:;">
                                         <div class="msg-header">
@@ -620,7 +620,7 @@
                                         <a class="dropdown-item" href="javascript:;">
                                             <div class="d-flex align-items-center">
                                                 <div class="user-online">
-                                                    <img src="assets/images/avatars/avatar-2.png" class="msg-avatar" alt="user avatar">
+                                                    <img src="assets/images/avatars/avatar3.png" class="msg-avatar" alt="user avatar">
                                                 </div>
                                                 <div class="flex-grow-1">
                                                     <h6 class="msg-name">Althea Cabardo <span class="msg-time float-end">14
@@ -783,215 +783,318 @@
                 <!-- <div class="breadcrumb-title pe-3">Semister Subjects</div> -->
                 <!--breadcrumb-->
                 <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-                    <div class="breadcrumb-title pe-3">Add Subjects</div>
+                    <div class="breadcrumb-title pe-3">Department</div>
                     <div class="ps-3">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0 p-0">
-                                <li class="breadcrumb-item text-primary"><a href="index.html"><i class="bx bx-home-alt"></i></a>
+                                <li class="breadcrumb-item"><a href="index.html" style="color: #00a8ff;"><i class="bx bx-home-alt"></i></a>
                                 </li>
-                                <!-- <li class="breadcrumb-item " aria-current="page" style="color: #00a8ff; text-decoration: none;"><a href="subjects.html">Semister Subjects</a></li> -->
-
-                                <li class="breadcrumb-item text-primary"><a href="subjects.html">Subjects</a>
-                                </li>
-                                <li class="breadcrumb-item active" aria-current="page">Add Subject</li>
+                                <li class="breadcrumb-item active" aria-current="page">Department</li>
 
                             </ol>
                         </nav>
                     </div>
 
+                    <div class="ms-auto"></div>
+                    <div class="btn-group">
+                        <a href="add-department.html" class="btn btn-primary btn-sm">Add Department</a>
+
+                    </div>
+
+
                 </div>
-                <!--end breadcrumb-->
 
-                <div class="row mt-4">
-                    <!-- <div class="col-12 col-lg-12">
-                        <div class="card radius-10">
-                            <div class="card-body">
+            </div>
+            <!--end breadcrumb-->
 
-
-                            </div>
-                        </div>
-                    </div> -->
-
-
-                    <div class="card border-top border-0 border-4 border-primary">
+            <div class="row mt-4">
+                <div class="col-12 col-lg-12">
+                    <div class="card radius-10">
                         <div class="card-body">
-                            <div class="border p-4 rounded">
-                                <div class="card-title d-flex align-items-center">
 
-                                    <h5 class="mb-0 text-primary">Add Subjects</h5>
-                                </div>
-                                <hr/>
-                                <form action="" method="post">
-                                    <div class="row mb-3">
-                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Department</label>
-                                        <div class="col-sm-9">
-                                            <select class="form-select mb-3" aria-label="Default select example">
-                                                <option selected disabled>Choose</option>
-                                                <option value="1">BBA</option>
-                                                <option value="2">BCA</option>
-                                                <option value="2">BMLT</option>
-                                                <option value="2">Msc</option>
-                                                
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="row mb-3">
-                                        <label for="inputPhoneNo2" class="col-sm-3 col-form-label">Semister</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputPhoneNo2" placeholder="Enter semister">
-                                        </div>
-                                    </div> -->
-                                    <div class="row mb-3">
-                                        <label for="inputEmailAddress2" class="col-sm-3 col-form-label">Subject</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputEmailAddress2" placeholder="Enter subject name">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Paper Code</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputChoosePassword2" placeholder="Enter paper code">
-                                        </div>
-                                    </div>
+                            <!-- <div class="d-flex justify-content-end">
+                                <a href="add-subject.html" class="btn btn-light "><i class="bi bi-plus-lg"></i></a>
+                                <a href="" class="btn btn-light  "><i class="bi bi-arrow-clockwise"></i></a>
+                            </div> -->
 
 
+                            <div class="table-responsive mt-4">
+                                <table class="table align-middle mb-0 text-center table-sm table-striped table-bordered">
+                                    <thead class="table-primary ">
+                                        <tr>
+                                            <th>Sr No.</th>
 
-                                    <div class="row">
-                                        <label class="col-sm-3 col-form-label"></label>
-                                        <div class="col-sm-9">
-                                            <button type="submit" class="btn btn-primary px-4 mt-4 text-white">Save</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                            <th>Department</th>
+
+                                            <th>Description</th>
+
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>BBA</td>
+
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, accusantium.</td>
+
+
+                                            <td>
+                                                <div>
+                                                    <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
+                                                    <ul class="dropdown-menu">
+
+
+                                                        <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <!-- <td><a href="" class="btn btn-sm btn-danger"><i class="bi bi-trash3"></i></a></td> -->
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>BCA</td>
+
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, accusantium.</td>
+
+
+                                            <td>
+                                                <div>
+                                                    <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
+                                                    <ul class="dropdown-menu">
+
+
+                                                        <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>BMLT</td>
+
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, accusantium.</td>
+
+
+                                            <td>
+                                                <div>
+                                                    <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
+                                                    <ul class="dropdown-menu">
+
+
+                                                        <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>MCA</td>
+
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, accusantium.</td>
+
+
+                                            <td>
+                                                <div>
+                                                    <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
+                                                    <ul class="dropdown-menu">
+
+
+                                                        <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>BBA (HR)</td>
+
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, accusantium.</td>
+
+
+                                            <td>
+                                                <div>
+                                                    <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
+                                                    <ul class="dropdown-menu">
+
+
+                                                        <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>Msc.</td>
+
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, accusantium.</td>
+
+
+                                            <td>
+                                                <div>
+                                                    <a class="dropdown-toggle dropdown-toggle-nocaret btn btn-light btn-sm" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
+                                                    <ul class="dropdown-menu">
+
+
+                                                        <li><a class="dropdown-item" href="javascript:;"><i class="bi bi-trash3"></i> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-
-                    <!--end page wrapper -->
-                    <!--start overlay-->
-                    <div class="overlay toggle-icon"></div>
-                    <!--end overlay-->
-                    <!--Start Back To Top Button--><a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
-                    <!--End Back To Top Button-->
-                    <footer class="page-footer">
-                        <p class="mb-0">Copyright © 2024. All right reserved.</p>
-                    </footer>
                 </div>
-                <!--end wrapper-->
-                <!--start switcher-->
-                <!-- <div class="switcher-wrapper">
-                    <div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
+
+                <!--end page wrapper -->
+                <!--start overlay-->
+                <div class="overlay toggle-icon"></div>
+                <!--end overlay-->
+                <!--Start Back To Top Button--><a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+                <!--End Back To Top Button-->
+                <footer class="page-footer">
+                    <p class="mb-0">Copyright © 2024. All right reserved.</p>
+                </footer>
+            </div>
+            <!--end wrapper-->
+            <!--start switcher-->
+            <!-- <div class="switcher-wrapper">
+                <div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
+                </div>
+                <div class="switcher-body">
+                    <div class="d-flex align-items-center">
+                        <h5 class="mb-0 text-uppercase">Theme Customizer</h5>
+                        <button type="button" class="btn-close ms-auto close-switcher" aria-label="Close"></button>
                     </div>
-                    <div class="switcher-body">
-                        <div class="d-flex align-items-center">
-                            <h5 class="mb-0 text-uppercase">Theme Customizer</h5>
-                            <button type="button" class="btn-close ms-auto close-switcher" aria-label="Close"></button>
-                        </div>
-                        <hr/>
-                        <h6 class="mb-0">Theme Styles</h6>
-                        <hr/>
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="lightmode" checked>
-                                <label class="form-check-label" for="lightmode">Light</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="darkmode">
-                                <label class="form-check-label" for="darkmode">Dark</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="semidark">
-                                <label class="form-check-label" for="semidark">Semi Dark</label>
-                            </div>
-                        </div>
-                        <hr/>
+                    <hr/>
+                    <h6 class="mb-0">Theme Styles</h6>
+                    <hr/>
+                    <div class="d-flex align-items-center justify-content-between">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" id="minimaltheme" name="flexRadioDefault">
-                            <label class="form-check-label" for="minimaltheme">Minimal Theme</label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="lightmode" checked>
+                            <label class="form-check-label" for="lightmode">Light</label>
                         </div>
-                        <hr/>
-                        <h6 class="mb-0">Header Colors</h6>
-                        <hr/>
-                        <div class="header-colors-indigators">
-                            <div class="row row-cols-auto g-3">
-                                <div class="col">
-                                    <div class="indigator headercolor1" id="headercolor1"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator headercolor2" id="headercolor2"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator headercolor3" id="headercolor3"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator headercolor4" id="headercolor4"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator headercolor5" id="headercolor5"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator headercolor6" id="headercolor6"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator headercolor7" id="headercolor7"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator headercolor8" id="headercolor8"></div>
-                                </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="darkmode">
+                            <label class="form-check-label" for="darkmode">Dark</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="semidark">
+                            <label class="form-check-label" for="semidark">Semi Dark</label>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="minimaltheme" name="flexRadioDefault">
+                        <label class="form-check-label" for="minimaltheme">Minimal Theme</label>
+                    </div>
+                    <hr/>
+                    <h6 class="mb-0">Header Colors</h6>
+                    <hr/>
+                    <div class="header-colors-indigators">
+                        <div class="row row-cols-auto g-3">
+                            <div class="col">
+                                <div class="indigator headercolor1" id="headercolor1"></div>
                             </div>
-                        </div>
-                        <hr/>
-                        <h6 class="mb-0">Sidebar Colors</h6>
-                        <hr/>
-                        <div class="header-colors-indigators">
-                            <div class="row row-cols-auto g-3">
-                                <div class="col">
-                                    <div class="indigator sidebarcolor1" id="sidebarcolor1"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator sidebarcolor2" id="sidebarcolor2"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator sidebarcolor3" id="sidebarcolor3"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator sidebarcolor4" id="sidebarcolor4"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator sidebarcolor5" id="sidebarcolor5"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator sidebarcolor6" id="sidebarcolor6"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator sidebarcolor7" id="sidebarcolor7"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="indigator sidebarcolor8" id="sidebarcolor8"></div>
-                                </div>
+                            <div class="col">
+                                <div class="indigator headercolor2" id="headercolor2"></div>
+                            </div>
+                            <div class="col">
+                                <div class="indigator headercolor3" id="headercolor3"></div>
+                            </div>
+                            <div class="col">
+                                <div class="indigator headercolor4" id="headercolor4"></div>
+                            </div>
+                            <div class="col">
+                                <div class="indigator headercolor5" id="headercolor5"></div>
+                            </div>
+                            <div class="col">
+                                <div class="indigator headercolor6" id="headercolor6"></div>
+                            </div>
+                            <div class="col">
+                                <div class="indigator headercolor7" id="headercolor7"></div>
+                            </div>
+                            <div class="col">
+                                <div class="indigator headercolor8" id="headercolor8"></div>
                             </div>
                         </div>
                     </div>
-                </div> -->
-                <!--end switcher-->
-                <!-- Bootstrap JS -->
-                <script src="assets/js/bootstrap.bundle.min.js"></script>
-                <!--plugins-->
-                <script src="assets/js/jquery.min.js"></script>
-                <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
-                <script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
-                <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-                <script src="assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
-                <script src="assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
-                <script src="assets/plugins/chartjs/js/Chart.min.js"></script>
-                <script src="assets/plugins/chartjs/js/Chart.extension.js"></script>
-                <script src="assets/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
-                <!--notification js -->
-                <script src="assets/plugins/notifications/js/lobibox.min.js"></script>
-                <script src="assets/plugins/notifications/js/notifications.min.js"></script>
-                <script src="assets/js/index.js"></script>
-                <!--app JS-->
-                <script src="assets/js/app.js"></script>
+                    <hr/>
+                    <h6 class="mb-0">Sidebar Colors</h6>
+                    <hr/>
+                    <div class="header-colors-indigators">
+                        <div class="row row-cols-auto g-3">
+                            <div class="col">
+                                <div class="indigator sidebarcolor1" id="sidebarcolor1"></div>
+                            </div>
+                            <div class="col">
+                                <div class="indigator sidebarcolor2" id="sidebarcolor2"></div>
+                            </div>
+                            <div class="col">
+                                <div class="indigator sidebarcolor3" id="sidebarcolor3"></div>
+                            </div>
+                            <div class="col">
+                                <div class="indigator sidebarcolor4" id="sidebarcolor4"></div>
+                            </div>
+                            <div class="col">
+                                <div class="indigator sidebarcolor5" id="sidebarcolor5"></div>
+                            </div>
+                            <div class="col">
+                                <div class="indigator sidebarcolor6" id="sidebarcolor6"></div>
+                            </div>
+                            <div class="col">
+                                <div class="indigator sidebarcolor7" id="sidebarcolor7"></div>
+                            </div>
+                            <div class="col">
+                                <div class="indigator sidebarcolor8" id="sidebarcolor8"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!--end switcher-->
+            <!-- Bootstrap JS -->
+            <script src="assets/js/bootstrap.bundle.min.js"></script>
+            <!--plugins-->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+            <script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+            <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+            <script src="assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+            <script src="assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+            <script src="assets/plugins/chartjs/js/Chart.min.js"></script>
+            <script src="assets/plugins/chartjs/js/Chart.extension.js"></script>
+            <script src="assets/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
+            <!--notification js -->
+            <script src="assets/plugins/notifications/js/lobibox.min.js"></script>
+            <script src="assets/plugins/notifications/js/notifications.min.js"></script>
+            <script src="assets/js/index.js"></script>
+            <!--app JS-->
+            <script src="assets/js/app.js"></script>
 </body>
 
 </html>
